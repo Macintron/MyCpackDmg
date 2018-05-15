@@ -1,6 +1,7 @@
 # MyCpackDmg
 CPack can't create adjusted window AND custom volume icon
 
+## Description
 When customising a disk image with CMake/CPack/DragNDrop on Mac, it is kind of impossible to have an adjusted window/icons AND a custom volume icon.
 
 This is my CMakeLists.txt
@@ -17,3 +18,8 @@ During build, the custom volume icon is visible, but vanishes after a few moment
 
 
 The CPACK_DMG_DS_STORE variant never worked for me (Icon size not correct, no background image). But if you have a tutorial how to do that, I'm open.
+
+
+## Build instruction
+
+    cmake . && make && make package

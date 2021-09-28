@@ -1,6 +1,10 @@
 # MyCpackDmg
 CPack can't create adjusted window AND custom volume icon
 
+## Solution
+Remove `update without registering applications` in the AppleScript. No side effects appeared since macOS 10.9.
+
+
 ## Description
 When customising a disk image with CMake/CPack/DragNDrop on Mac, it is kind of impossible to have an adjusted window/icons AND a custom volume icon.
 
